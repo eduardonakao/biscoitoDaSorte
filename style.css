@@ -48,6 +48,25 @@ p {
     color: #34355B;
 }
 
+#biscoitoFechado:hover {
+    animation: shake .5s infinite;
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0% { transform: translate(.1rem, .1rem) rotate(0deg); }
+    10% { transform: translate(-.1rem, -.2rem) rotate(-1deg); }
+    20% { transform: translate(-.3rem, 0rem) rotate(1deg); }
+    30% { transform: translate(.3rem, .2rem) rotate(0deg); }
+    40% { transform: translate(.1rem, -.1rem) rotate(1deg); }
+    50% { transform: translate(-.1rem, .2rem) rotate(-1deg); }
+    60% { transform: translate(-.3rem, .1rem) rotate(0deg); }
+    70% { transform: translate(.1rem, .1rem) rotate(-1deg); }
+    80% { transform: translate(-.1rem, -.1rem) rotate(1deg); }
+    90% { transform: translate(.1rem, .2rem) rotate(0deg); }
+    100% { transform: translate(.1rem, -.2rem) rotate(-1deg); }
+}
+
 /* PAGE2 */
 
 .message {
@@ -57,7 +76,7 @@ p {
     margin: 1.7rem 0;
     position: relative;
 
-    animation: lukyMessage 3s infinite
+    animation: lukyMessage 3s
 }
 
 @keyframes lukyMessage {
