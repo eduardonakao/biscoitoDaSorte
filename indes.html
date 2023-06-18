@@ -7,27 +7,33 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Dancing+Script&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Dancing+Script&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <main>
-        <section class="text">
+        <section class="page1 hide">
             <h1>Qual é sua sorte de hoje?</h1>
             <p>Abra o biscoito e descubra!</p>
+            
+            <div id="biscoitoFechado">
+                <img src="/img/biscoitofechado.svg" alt="biscoitoaberto">
+            </div>
         </section>
 
-        <div id="biscoitofechado">
-            <img src="/img/biscoitofechado.svg" alt="biscoitoaberto">
-        </div>
+        <section class="page2">
+            <h1>Aqui está a sua sorte de hoje:</h1>
 
-        <section>
-            <h1>Qual é sua sorte de hoje?</h1>
+            <div class="message">
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+            </div>
+            
+            <div id="biscoitoAberto">
+                <img src="/img/biscoitoaberto.svg" alt="biscoitoaberto" class="">
+            </div>
+
+            <button>Abrir outro biscoito</button>
         </section>
-
-        <div id="biscoitoaberto">
-            <img src="/img/biscoitoaberto.svg" alt="biscoitoaberto">
-        </div>
     </main>
         
     <script src="/main.js"></script>

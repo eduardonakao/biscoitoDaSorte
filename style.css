@@ -12,4 +12,84 @@ body {
     background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
     font-size: 2.4rem;
     font-family: 'Montserrat';
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.hide {
+    display: none;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+
+main {
+    background-color: white;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+    border-radius: .5rem;
+    padding: 4.8rem 6.4rem;
+
+    width: min(42.8rem, 90%);
+    text-align: center;
+    margin-top: -12rem;
+}
+
+/* PAGE1 */
+
+p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 1.4rem;
+    margin-bottom: 2.0rem;
+    color: #34355B;
+}
+
+/* PAGE2 */
+
+.message {
+    background-color: #E4EDF1;
+    box-shadow: .2rem .2rem .2rem rgba(85, 85, 85, 0.5);
+    padding: 1rem;
+    margin: 1.7rem 0;
+    position: relative;
+
+    animation: lukyMessage 3s infinite
+}
+
+@keyframes lukyMessage {
+    0% {transform: scale(0); top: 20rem;}
+
+    100% {transform: scale(1); top: 0px;}
+}
+
+span {
+    font-family: 'Dancing Script';
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+
+#biscoitoAberto {
+    margin-bottom: 5.93rem;
+    margin-top: 6.01rem;
+}
+
+button {
+    padding: 1.6rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'DM Sans';
+    color: white;
+    background-color: #FF9500;
+    border-radius: .4rem;
+    border-style: none;
+    transition: background .3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c97500;
 }
