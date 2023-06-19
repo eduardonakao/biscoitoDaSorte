@@ -11,14 +11,11 @@ const randomMessages = [
     'A maior de todas as torres começa no solo.',
 ]
 
-  
-
 function biscoitoFechadoClick() {
     page1.classList.toggle('hide')
     page2.classList.toggle('hide')
     randomMessage = randomMessages[Math.floor(Math.random() * randomMessages.length)];
     span.innerText = randomMessage
-
 }
 
 biscoitoFechado.addEventListener('click', biscoitoFechadoClick)
@@ -26,9 +23,6 @@ biscoitoFechado.addEventListener('click', biscoitoFechadoClick)
 function buttonResetClick() {
     page1.classList.toggle('hide')
     page2.classList.toggle('hide')
-    
 }
-
-
 
 button.addEventListener('click', buttonResetClick)
